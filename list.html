@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">          <!-- Used for using Google font ubuntu -->
+
+
+<style>
+
+    #main-div {
+        height: 100vh;
+        width: 100vw;
+        margin: 0%;
+    }
+
+    body {
+        height: 100vh;                      /* Covers entire window height and width */
+        width: 100vw;
+        margin: 0%;                         /* No white space as no margin */
+        background-color: #e0e0e0;
+        font-family: Ubuntu, sans-serif;
+        
+    }  
+
+    .header {
+        background-color: rosybrown;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        width: 100%;
+        left: 0;
+        top: 0;
+
+   }
+
+   .footer {
+        background-color: rosybrown;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+
+   }
+    #hotel-info {
+        margin: 2%;
+        width: 40%;
+        background-color: rgb(132,136,139);
+
+    }
+
+
+
+</style>
+
+<body>
+
+<div id="main-div">
+   
+
+    
+
+    <div class="header">
+        <a href="/index.html" target="_self"  style="text-decoration:none;">                                 <!--opens in same tab-->
+            <img src="/assets/images/logo.png" alt="logo"  height="60px"  width="60px">
+        </a>
+
+        <a href="login.html" target="_self">Login</a>                                                        <!--opens in same tab-->
+    </div>
+
+
+
+
+
+    <div class="content">
+        <div>
+            <ul>
+                <a href="#list-view" target="_self">                     <!--opens in same page to list-view id section -->
+                    <li>List View</li>
+                </a>
+
+                <a href="#map-view" target="_self">                     <!--opens in same page to map-view id section -->
+                    <li>Map View</li>
+                </a>
+            </ul>
+        </div>
+        <div id="list-view">
+            <div id="hotel-info">                      
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blue Hotel" height="200px" width="250px">
+                <br><br>                                                         <!-- Use break to have gap btw lines-->
+
+                <a href="/detail.html" target="_self">Radisson Blue Hotel</a>    <!--opens in same tab-->
+                <br><br>
+            
+                <a href="/detail.html" target="_self">5 Star</a>    <!--opens in same tab-->
+                <br><br>
+            
+                <a href="/detail.html" target="_self">New Delhi</a>    <!--opens in same tab-->
+                <br><br>
+            </div>
+            <div id="hotel-info">                      
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi" height="200px" width="250px">
+                <br><br>                                                        
+
+                <a href="/detail.html" target="_self">The Lalit New Delhi</a>    <!--opens in same tab-->
+                <br><br>
+            
+                <a href="/detail.html" target="_self">4.5 Star</a>    <!--opens in same tab-->
+                <br><br>
+            
+                <a href="/detail.html" target="_self">New Delhi</a>    <!--opens in same tab-->
+                <br><br>
+            </div>
+            <div id="hotel-info">                      
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace" height="200px" width="250px">
+                <br><br>                                                        
+
+                <a href="/detail.html" target="_self">Taj Palace</a>    <!--opens in same tab-->
+                <br><br>
+            
+                <a href="/detail.html" target="_self">4 Star</a>    <!--opens in same tab-->
+                <br><br>
+            
+                <a href="/detail.html" target="_self">New Delhi</a>    <!--opens in same tab-->
+                
+            </div>
+        </div>
+        <div id="map-view">
+            <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map View">
+            <br>
+             Map View
+             <br><br>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div>
+            <a href="contact.html" target="_self">Contact Us</a>        <!--opens in same tab-->
+        </div>
+        <div>
+            <a href="https://www.facebook.com"  target="_blank"  style="text-decoration:none;">      <!--opens in new tab and no link line -->
+                <img src="assets/images/facebook.png" alt="Facebook" height="20px"  width="22px">
+            </a> 
+            <a href="https://www.instagram.com "  target="_blank"  style="text-decoration:none;">    <!--opens in new tab and no link line -->
+                <img src="assets/images/instagram.png" alt="Instagram" height="20px"  width="22px">
+            </a>
+            <a href="https://www.twitter.com"  target="_blank"  style="text-decoration:none;">       <!--opens in new tab and no link line -->
+                <img src="assets/images/twitter.png" alt="Twitter" height="20px"  width="22px">
+            </a> 
+        </div>
+        <div>
+            <span>&copy;</span> 2020 ROOM SEARCH PVT. LTD.
+        </div>      
+    </div>
+
+
+
+</div>
+
+</body>
+</html>

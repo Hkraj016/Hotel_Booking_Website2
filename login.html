@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    #main-div {
+        height: 100vh;               /*Covers entire window height and width */
+        width: 100vw;
+    }
+
+</style>
+
+<body>
+
+    <div id="main-div">
+
+
+
+        
+
+        <form action="/index.html" method="get">
+            <table>
+                <tr>
+                    <td>Username :</td>         <!-- automcomplete tells whether upon refresh we get back all the tried uname as suggestions -->
+                    <td>
+                        <input type="text" name="fname" placeholder="Enter your name"  required  autocomplete="on">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password :</td>       <!-- pwd with all limitations like a-z , 8 letters max , 1 no. , 1 lowercase and 1 uppercase -->
+                    <td>
+                       <input type="password" name="pass" placeholder="Enter your password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">          <!-- 2 Colspan means it expands over 2 columns ,similarly for rowspan for rows-->
+                        <input type="submit" name="btn" value="Login">
+                    </td>
+                </tr>
+            </table>
+        </form>   
+        
+
+
+        
+    </div>
+
+</body>
+</html>
+ 

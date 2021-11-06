@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">          <!-- Used for using Google font ubuntu -->
+
+<style>
+
+    #main-div {
+        height: 100vh;               /*Covers entire window height and width */
+        width: 100vw;
+        margin: 0%;
+    }
+
+    body {
+        height: 100vh;                      /* Covers entire window height and width */
+        width: 100vw;
+        margin: 0%;                         /* No white space as no margin */
+        background-color: #e0e0e0;
+        font-family: Ubuntu, sans-serif;
+        
+    }  
+
+    .header {
+        background-color: rosybrown;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        width:  100%;
+        left: 0;
+        top: 0;
+
+   }
+
+   .footer {
+        background-color: rosybrown;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+
+   }
+
+    #hotel-image {
+        margin: 2% 4% 0%;           /* Margin top(2%),right(4%),bottom(0%),left(4%) */
+    }
+
+    form {
+        margin: 0% 4% 1%;
+    }
+
+    #hotel-descr {
+        margin-top: 1%;
+        margin-right: 4%;
+        margin-bottom: 2%;
+        margin-left: 4%;
+    }
+
+</style>
+
+<body>
+  
+    <div id="main-div">
+   
+
+
+
+
+        <div class="header">
+            <a href="/index.html" target="_self"  style="text-decoration:none;">                                 <!--opens in same tab-->
+                <img src="/assets/images/logo.png" alt="logo"  height="60px"  width="60px">
+            </a>
+
+            <a href="login.html" target="_self">Login</a>                                                        <!--opens in same tab-->
+        </div>
+
+
+
+    
+
+        <div class="content">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"  id="hotel-image"  height="500px"  width="500px">
+            <br>
+ 
+            <form action="/payment.html" method="get">
+                <table>
+                    <tr>
+                        <td>Adults :</td>         <!-- automcomplete tells whether upon refresh we get back all the tried uname as suggestions -->
+                        <td>
+                            <input type="number" name="fname" placeholder="Enter no. of adults" min="1" required  autocomplete="off">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Name :</td>
+                        <td>
+                            <input type="text" name="fname" placeholder="Enter your Username" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>From Date :</td>
+                        <td>
+                            <input type="date"  required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>To Date :</td>
+                        <td>
+                            <input type="date"   required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Total :</td>  <!-- Is calculated later on by API call-->
+                        <td>
+                        
+                        <!--  <input type="hidden"> --->                   <!-- defines a hidden input field (not visible to a user) -->
+
+                       <!--   <input type="text" onfocus="this.value=''" value="Click here to clear">  -->
+
+                            <input type="text" readonly>     <!-- This is read only data -->
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center;">   <!-- 2 Colspan means expands over 2 cols ,similarly for rowspan for rows-->
+                            <input type="submit" name="btn" value="Book now">
+                        </td>
+                    </tr>
+                </table>
+            </form> 
+            <br>
+        
+    
+            <div id="hotel-descr">
+                <b>Radisson Blue Hotel</b> <br><br>
+                <span>RATING <br><br></span>
+                <span>5 Star <br><br></span> 
+                <span>AMENITIES <br></span>
+
+                <ul>
+                    <li>Room Service</li>
+                    <li>Restaurant</li>
+                    <li>Business Center</li>
+                    <li>Fitness Center</li>
+                    <li>Pool</li>
+                </ul>
+
+                <span>DESCRIPTION <br><br></span>
+                <span>Welcome to Radisson Blue Hotel, one of the most famoust Restaurants in India and we hope you have a pleasant stay....</span>  
+            </div>
+        
+
+        </div>
+        <br>
+
+
+
+
+        <div class="footer">
+            <div>
+                <a href="contact.html" target="_self">Contact Us</a>        <!--opens in same tab-->
+            </div>
+            <div>
+                <a href="https://www.facebook.com"  target="_blank"  style="text-decoration:none;">      <!--opens in new tab and no link line -->
+                    <img src="assets/images/facebook.png" alt="Facebook" height="20px"  width="22px">
+                </a> 
+                <a href="https://www.instagram.com "  target="_blank"  style="text-decoration:none;">    <!--opens in new tab and no link line -->
+                    <img src="assets/images/instagram.png" alt="Instagram" height="20px"  width="22px">
+                </a>
+                <a href="https://www.twitter.com"  target="_blank"  style="text-decoration:none;">       <!--opens in new tab and no link line -->
+                    <img src="assets/images/twitter.png" alt="Twitter" height="20px"  width="22px">
+                </a> 
+            </div>
+            <div>
+                <span>&copy;</span> 2020 ROOM SEARCH PVT. LTD.
+            </div>      
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+   

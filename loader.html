@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    #main-div {                                     /* Here default background color for main-div or entire screen is white , can be changed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;                               /*Covers entire window height and width */
+        width: 100vw;
+    }
+
+    #loader {                                        /* Here default background color for loader is screen's white , can be changed */
+        height: 70px;
+        width: 70px;
+        border: 12px solid #F3F3F3;
+        border-radius: 50%;                         /* Because of height and width plus the border we are getting like 2 borders */
+        border-top: 12px solid #444444;
+    }
+
+</style>
+
+<body>
+
+    <div id="main-div">
+        <div id="loader"></div>
+    </div>
+
+</body>
+</html>
+ 

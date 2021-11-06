@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">          <!-- Used for using Google font ubuntu -->
+
+<style>
+    
+    #main-div {
+        height: 100vh;               /*Covers entire window height and width */
+        width: 100vw;
+        margin: 0%;
+    }
+
+    body {
+        height: 100vh;                      /* Covers entire window height and width */
+        width: 100vw;
+        margin: 0%;                         /* No white space as no margin */
+        background-color: #e0e0e0;
+        font-family: Ubuntu, sans-serif;
+        
+    }  
+
+    .header {
+        background-color: rosybrown;
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        width: 100%;
+        left: 0;
+        top: 0;
+
+   }
+
+   .footer {
+        background-color: rosybrown;
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        width: 100%;
+        left: 0;
+        bottom: 0;
+
+   }
+
+    #hotel-pay-details {
+        background-color: rgb(132,136,139);
+        width: 50%;
+        height: 20%;
+        margin: 2% auto;     /* To horizontally center a block element(like div), use (margin:auto;) Margin(top(2),right,bottom(2),left) */    
+    }
+
+    #customer-info {
+        margin: 2%;
+    }
+
+    #tariff-details {
+        margin: 2%;                                          /* Margin 2% all sides */
+        border: 1px solid black;
+        padding: 1% 2%;                                     /* Padding (top,right,bottom,left) */
+        border-radius: 5px;
+             
+    }
+
+</style>
+
+<body>
+
+    <div id="main-div">
+   
+    
+
+        <div class="header">
+            <a href="/index.html" target="_self"  style="text-decoration:none;">                                 <!--opens in same tab-->
+                <img src="/assets/images/logo.png" alt="logo"  height="60px"  width="60px">
+            </a>
+
+            <a href="login.html" target="_self">Login</a>                                                        <!--opens in same tab-->
+        </div>
+
+
+
+
+
+        <div class="content">
+            <div id="hotel-pay-details">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"  height="500px"  width="500px">
+                <br>
+
+                <span><b>Radisson Blue Hotel</b></span>
+                <br><br>
+
+                <span>#38 in 1,289 hotels in New Delhi</span>
+                <br><br>
+
+                <span>Highway 8 , New Delhi 110017 , India</span>
+            </div>
+            <br>
+
+            <div id="customer-info">
+                <span><b>Name :</b>  John Doe</span>
+                <br><br>
+
+                <span><b>Number of Adults :</b>  2</span>
+                <br><br>
+
+                <span><b>Check-in Date :</b> 06/06/2020</span>
+                <br><br>
+
+                <span><b>Check-out Date :</b> 10/06/2020</span>
+                
+            </div>
+
+            <div id="tariff-details">
+                <span><b>Tariff Breakdown :</b> Rs 2000 * 1 Double Bed * 5 Days</span>
+                <br><br>
+
+                <span><b>Total Amount :</b>  Rs 10000</span>
+                
+            </div>
+
+            <div>
+                <a href="/payment.html" target="_self">Pay Now</a>         <!--opens in same tab-->
+            </div>
+
+        </div>
+    
+
+
+
+        <div class="footer">
+            <div>
+                <a href="contact.html" target="_self">Contact Us</a>        <!--opens in same tab-->
+            </div>
+            <div>
+                <a href="https://www.facebook.com"  target="_blank"  style="text-decoration:none;">      <!--opens in new tab and no link line -->
+                    <img src="assets/images/facebook.png" alt="Facebook" height="20px"  width="22px">
+                </a> 
+                <a href="https://www.instagram.com "  target="_blank"  style="text-decoration:none;">    <!--opens in new tab and no link line -->
+                    <img src="assets/images/instagram.png" alt="Instagram" height="20px"  width="22px">
+                </a>
+                <a href="https://www.twitter.com"  target="_blank"  style="text-decoration:none;">       <!--opens in new tab and no link line -->
+                    <img src="assets/images/twitter.png" alt="Twitter" height="20px"  width="22px">
+                </a> 
+            </div>
+            <div>
+                <span>&copy;</span> 2020 ROOM SEARCH PVT. LTD.
+            </div>      
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+
+
+   
